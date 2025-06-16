@@ -118,10 +118,12 @@
                         <p style="font-size:18px">
                             I am a second-year Master's student at the Department of Information Technology and
                             Electrical Engineering, <a href="https://ethz.ch/en/" class="text-info">ETH Zurich</a>,
-                            advised by <a href="https://sites.google.com/view/lanajosipovic" class="text-info">Prof. Lana
+                            advised by <a href="https://sites.google.com/view/lanajosipovic" class="text-info">Prof.
+                                Lana
                                 Josipović</a>. Previously, I obtained B.Eng. in Electronic Science
                             and Technology from <a href="https://www.seu.edu.cn/english/" class="text-info">Southeast
-                                University</a>, where I was advised by <a href="https://ic.seu.edu.cn/caopeng/" class="text-info">
+                                University</a>, where I was advised by <a href="https://ic.seu.edu.cn/caopeng/"
+                                class="text-info">
                                 Prof. Peng Cao</a>.
                         </p>
 
@@ -168,41 +170,44 @@
                             <b>Refactoring & Extending MILP-Based Buffer Placement</b><br>
                             <i>ETH Zurich, 2024 - 2025</i>
                             <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                                Redesigned Dynamatic's buffer placement infrastructure with modular MILP formulation,
-                                cost-aware objective, and throughput-preserving constraints. Achieved 100× optimization
-                                speedup via two-stage MIQCP solving.
+                                Redesigned Dynamatic's buffer placement infrastructure to support diverse buffer types
+                                and algorithmic extensions. Implemented a new optimization algorithm and resolved
+                                critical modeling issues to improve circuit performance and ensure correct modeling.
                             </p>
                         </li>
                         <li class="paper" words="CAB">
                             <b>Cost-Aware Buffer Placement for Dataflow Circuits</b><br>
                             <i>ETH Zurich, 2024</i>
                             <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                                Proposed a latency-bound MILP model to select low-area buffers while preserving
-                                throughput. Achieved 4.8-25.5% LUT reduction on PolyBench without performance loss.
+                                Proposed a MILP model that selects low-area buffers while preserving throughput.
+                                Achieved 4.8-25.5% LUT reduction on PolyBench benchmarks without performance loss.
                             </p>
                         </li>
                         <li class="paper" words="SCDM">
                             <b>Statistical Cell Delay Modeling under Input Slew Variation</b><br>
                             <i>Southeast University, 2023</i>
                             <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                                Derived unified delay model via piecewise-log input slews; validated on 28nm PDK with
-                                4% error in HSPICE Monte Carlo.
+                                Built a statistical delay model for sub-threshold inverter chains under correlated
+                                V<sub>th</sub> and input slew variations. Used piecewise-log input approximation to
+                                derive closed-form delay expressions. Monte Carlo validation on a 28 nm PDK showed
+                                2.9-3.7x lower error in delay variation compared to prior models.
                             </p>
                         </li>
                         <li class="paper" words="RTC">
                             <b>Racing Track Calibration via Cone Tracking</b><br>
                             <i>UC Irvine (Remote), 2022</i>
                             <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                                Detected cones from onboard videos and used vehicle dynamics to calibrate GPS track via
-                                Gurobi-based optimization.
+                                Tracked roadside cones from onboard video and aligned them to vehicle coordinates.
+                                Optimized GPS trajectory using cone-to-vehicle geometry via Gurobi.
                             </p>
                         </li>
                         <li class="paper" words="FFSTA">
                             <b>Flip-Flop Timing Optimization for NTV Design</b><br>
                             <i>Southeast University, 2021 - 2022</i>
                             <p style="font-size: 16px; margin-top: 10px; text-align:justify;">
-                                Developed ANN-based interdependent FF timing model and integrated it into STA flow;
-                                improved performance by 1.7-6.3% on ISCAS'89 benchmarks.
+                                Built an ANN-based timing model capturing interdependent setup/hold and clk-to-q delays
+                                in NTV flip-flops. Integrated into STA with a GA-based optimizer, reducing clock period
+                                by 1.7-6.3% on ISCAS'89 without hardware overhead.
                             </p>
                         </li>
                     </ul>
